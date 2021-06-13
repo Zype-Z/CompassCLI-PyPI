@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "CompassCLI"
+version = "0.1.2"
+description = "Official CLI for Zype."
+authors = ["Rajdeep Malakar <Rajdeep@tgeeks.cf>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ZypeSDK = "^1.6"
+rich = "^10.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+compass = 'compasscli.compass:main'
